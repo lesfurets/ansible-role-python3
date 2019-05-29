@@ -11,6 +11,9 @@ galaxy_info:
     - name: EL
       versions:
         - 7
+    - name: Debian
+      versions:
+        - stretch
     - name: Ubuntu
       versions:
         - xenial
@@ -19,4 +22,5 @@ galaxy_info:
     - development
     - python
   dependencies:
-    - {role: 'lesfurets.epel', when: ansible_os_family == 'RedHat'}
+    - role: 'lesfurets.epel'
+      when: ansible_os_family == 'RedHat'

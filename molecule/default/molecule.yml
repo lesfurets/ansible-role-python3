@@ -24,6 +24,11 @@ platforms:
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
+  - name: debian9
+    image: jrei/systemd-debian:9
+    privileged: true
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
 provisioner:
   name: ansible
   lint:

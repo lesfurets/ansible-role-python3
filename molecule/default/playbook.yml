@@ -2,4 +2,6 @@
 - name: Converge
   hosts: all
   roles:
+    - role: lesfurets.epel
+      when: ansible_os_family == 'RedHat'
     - role: ansible-role-python3
