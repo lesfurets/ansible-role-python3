@@ -4,4 +4,5 @@
     name:
       - python36
       - python36-pip
+      - python-pip
     state: present
